@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/courselist/courselist",
+    "pages/options/options",
+    "pages/writeonmyown/writeonmyown"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "普通课程表",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 600000,
+    "downloadFile": 10000
+  }
+}

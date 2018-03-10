@@ -1,0 +1,10 @@
+<!--options.wxml-->
+<view class="container">
+     <text>请输入学号</text>
+     <input type="text" value="F" focus="true" bindinput="idinput"></input>
+     <text>请输入密码</text>
+     <input type="text" password="true" bindinput="passwordinput"></input>
+     <text>{{warning}}</text>
+     <button bindtap="getinfo" disabled="{{buttondisable}}">提交</button>
+
+</view>

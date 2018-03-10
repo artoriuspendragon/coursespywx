@@ -1,0 +1,42 @@
+<!--courselist.wxml-->
+<view class="container">
+<modal hidden="{{modalhidden}}" title="确定删除数据吗" confirm-text="确定" cancel-text="取消" bindcancel="modalcancel" bindconfirm="modalconfirm">
+</modal>
+<block class="nocourse" wx:if="{{!courseinfo}}">
+   <text>
+   没有课表信息
+   </text>
+   <button class="getbutton" bindtap="gotooptions">
+   获取课表
+   </button>
+   <button class="writebutton" bindtap="gotowriteonmyown">
+   手动输入
+   </button>
+</block>
+<block wx:else>
+  <view class="topbar">
+      <button class="backward" bindtap="changeweek" id="backward">
+        {{backward}}
+      </button>
+      <button class="thisweek">
+        第{{thisweek}}周
+      </button>
+      <button class="forward" bindtap="changeweek" id="forward">
+        {{forward}}
+      </button>
+  </view>
+  <view class="table">
+    <view wx:for="{{singleweekinfo}}" class="tr">
+      <view class="{{index+1==currentweekday?'th-c':'th'}}">{{weeks[index]}}</view>
+      <view wx:for="{{item}}" wx:for-item="singleclass" class="{{index%2==0?'td':'td-second'}}">
+          <view  class="singleclass">
+          {{singleclass.name}}
+          {{singleclass.location}}
+          {{singleclass.teacher}}
+          </view>
+      </view>
+    </view>
+  </view>
+  <button class="getbutton" bindtap="clearstorge">清除数据</button>
+</block>
+</view >

@@ -1,0 +1,24 @@
+/* options.wxss */
+page{
+  background-color:#3B3B3B;
+}
+input{
+margin:40rpx 10rpx;
+height:40rpx;
+border: 1rpx solid #CCCCCC;
+border-radius:20rpx;
+background-color:#ffffff;
+text-align:center;
+}
+text{
+  color:white;
+  font-family: "Microsoft YaHei";
+}
+button{
+  margin-top: 100rpx;
+  border-radius: 23px;
+  padding: 0 50px;
+  background-color:#f75b47;
+  font-family: "Microsoft YaHei";
+  color:white;
+}

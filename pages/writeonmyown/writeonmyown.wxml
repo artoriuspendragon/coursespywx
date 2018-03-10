@@ -1,0 +1,4 @@
+<!--writeonmyown.wxml-->
+<input type="text" value="此功能为debug功能，请勿随意使用" focus="true" bindinput="datainput" maxlength='-1'></input>
+<button bindtap="startwrite">确定</button>>
+<button bindtap="cancelbutton">取消</button>>

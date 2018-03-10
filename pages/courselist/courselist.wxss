@@ -1,0 +1,156 @@
+/* courselist.wxss */
+page{
+  font-size:20rpx;
+  background-color:#ff3366;
+}
+.container{
+  padding: 0px;
+}
+.topbar{
+  position:absolute;
+  font-size:30rpx;
+  font-weight:5rpx;
+  width :100%;
+  border-bottom:1px solid #CCCCCC;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.backward{
+  padding: 5rpx 0;
+  width:20%;
+  font-size:30 rpx;
+  line-height: 2;
+   border-radius:0;
+}
+.backward::after{
+   border-radius:0;
+}
+.thisweek{
+  padding: 5rpx 0;
+  width:60%;
+  border-left:1px solid #CCCCCC;
+  border-right:1px solid #CCCCCC;
+  font-size:30 rpx;
+  border-radius:0;
+  line-height: 2;
+}
+.thisweek::after
+{
+  border-radius:0;
+}
+.forward{
+  padding: 5rpx 0;
+  width:20%;
+  font-size:30 rpx;
+  line-height: 2;
+   border-radius:0;
+}
+.forward::after{
+   border-radius:0;
+}
+.nocourse{
+  flex-direction: column;
+  align-items: center;
+}
+text{
+  margin-top: 100rpx;
+  font-size: 100rpx;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  color:#fff;
+}
+.getbutton{
+  margin-top: 300rpx;
+  margin-bottom: 100rpx;
+  border-radius: 23px;
+  padding: 0 50px;
+  background-color:#f75b47;
+  font-family: "Microsoft YaHei";
+  color:white;
+}
+.writebutton{
+  margin-top: 0rpx;
+  margin-bottom: 100rpx;
+  border-radius: 23px;
+  padding: 0 50px;
+  background-color:#66ffff;
+  font-family: "Microsoft YaHei";
+  color:white;
+}
+.button-hover{
+  background-color:#f7462f;
+}
+.table{
+  margin-top: 200rpx;
+  width:95%;
+  border: 1rpx;
+  display: flex;
+  justify-content: center;
+
+}
+.tr{
+  width:12%;
+  flex-direction: column;
+}
+.th{
+   box-sizing: border-box;
+   line-height:3;
+   margin: 2rpx 0;
+   width: 97%;
+   height: 50rpx;
+   background-color:#CFCFCF;
+   border-radius: 5px 5px 0 0;
+   text-align:center;
+   font-size:10rpx;
+   opacity: 0.7;
+   font-weight: 900;
+   font-family: "Microsoft YaHei";
+}
+.th-c{
+   box-sizing: border-box;
+   line-height:3;
+   margin: 2rpx 0;
+   width: 97%;
+   height: 50rpx;
+   background-color:#ffffff;
+   border-radius: 5px 5px 0 0;
+   text-align:center;
+   font-size:10rpx;
+   opacity: 0.7;
+   font-weight: 900;
+   font-family: "Microsoft YaHei";
+}
+.td{
+  margin: 2rpx 0;
+  width: 97%;
+  height: 180rpx;
+  background-color:#33ccff;
+  opacity: 0.7;
+  border-radius: 5rpx;
+  align-items: center;
+  flex-wrap:warp;
+  color:white;
+}
+.td-second{
+  margin: 2rpx 0;
+  width: 97%;
+  height: 180rpx;
+  background-color:#99ffff;
+  opacity: 0.7;
+  border-radius: 5rpx;
+  align-items: center;
+  flex-wrap:warp;
+  color:black;
+}
+.singleclass{
+  margin:0;
+  font-family:'Black';
+  box-sizing: border-box;
+  height:100%;
+  width:100%;
+  padding:5rpx 5rpx;
+  opacity:1;
+  word-break:break-all;
+}
